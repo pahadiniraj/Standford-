@@ -1,7 +1,12 @@
 import React from "react";
+import { ThemeToggle } from "../Theme/ThemeToggle";
 
 const HomeComponent = () => {
-  return <>hello world</>;
+  return (
+    <div className="">
+      <ThemeToggle />
+    </div>
+  );
 };
 
 export default HomeComponent;

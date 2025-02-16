@@ -1,7 +1,16 @@
+import { Navbar } from "@/components/Navbar/Navbar";
+import PreNavbar from "@/components/Navbar/PreNavbar";
+
 export default function HomeLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <body>{children}</body>;
+  return (
+    <div className="">
+      <PreNavbar />
+      <Navbar />
+      {children}
+    </div>
+  );
 }
