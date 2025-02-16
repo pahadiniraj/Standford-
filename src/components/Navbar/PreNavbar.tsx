@@ -1,35 +1,35 @@
 "use client";
-import { SocialLinks } from "@/assets/SocialLinks/SocialLinks";
+import { SocialLinks } from "@/contents/SocialLinks/SocialLinks";
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import AlertMotion from "../../../ui/AlertMotion";
 
 const PreNavbar = () => {
   return (
-    <div className="text-white bg-black p-4 text-xl">
-      <div className="mx-auto container w-full flex justify-between">
-        <div className="flex gap-10">
+    <div className="text-white bg-black p-4 text-sm hidden ">
+      <div className="mx-auto  container w-full flex justify-between items-start md:px-16 relative ">
+        <div className="flex md:gap-10 flex-col justify-start items-start gap-2 ">
           {/* Email */}
           <a
             href="mailto:info@stanfordinternational.com.au"
-            className="flex justify-center items-center gap-3"
+            className="flex justify-center items-center gap-2"
           >
-            <HiOutlineMail className="text-3xl" />
-            <p>info@stanfordinternational.com.au</p>
+            <HiOutlineMail className="text-xl" />
+            <p className="text-xs">info@stanfordinternational.com.au</p>
           </a>
 
           {/* Phone */}
           <a
             href="tel:(02)91459597"
-            className="flex justify-center items-center gap-3"
+            className="flex justify-center items-center gap-2"
           >
             <AlertMotion />
-            <p>(02) 9145 9597</p>
+            <p className="text-xs">(02) 9145 9597</p>
           </a>
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center items-center gap-3">
+        <div className="flex flex-col justify-center items-center gap-2">
           <p>Follow us:</p>
           <div className="flex justify-between items-center mt-1">
             {SocialLinks.map((value, index) => {
@@ -40,9 +40,9 @@ const PreNavbar = () => {
                   href={value.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-center bg-yellow-400  text-black rounded-full p-2 mr-3 transition duration-200"
+                  className="group flex items-center justify-center bg-yellow-400  text-black rounded-full p-1 mr-3 transition duration-200"
                 >
-                  <Icon className={`text-lg  group-hover:${value.color}`} />
+                  <Icon className={`text-xs  group-hover:${value.color}`} />
                 </a>
               );
             })}

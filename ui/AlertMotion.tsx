@@ -6,8 +6,8 @@ const CallAlert = () => {
   return (
     <motion.div
       animate={{
-        y: [0, -8, 0, 8, 0], // Slight up and down movement
-        rotate: [0, -5, 5, -5, 5, 0], // Reduced rotation for a subtle effect
+        // y: [0, -1, 0, 1, 0], // Slight up and down movement
+        rotate: [0, -10, 10, -10, 10, 0], // Reduced rotation for a subtle effect
         scale: [1, 1.05, 1], // Slight scale-up to mimic vibration
       }}
       transition={{
@@ -19,7 +19,7 @@ const CallAlert = () => {
       }}
       whileHover={{ scale: 1 }} // Slightly scale up on hover
     >
-      <BiSolidPhoneCall className="text-3xl" />
+      <BiSolidPhoneCall className="text-xl" />
     </motion.div>
   );
 };
