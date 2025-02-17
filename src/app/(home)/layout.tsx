@@ -8,8 +8,6 @@ export default function HomeLayout({
 }>) {
   return (
     <div className="relative overflow-hidden">
-      <div className="w-64 h-64 bg-yellow-400 rounded-3xl rotate-[-10deg] absolute -right-40  -top-40 -z-10  "></div>
-
       <PreNavbar />
       <Navbar />
       {children}

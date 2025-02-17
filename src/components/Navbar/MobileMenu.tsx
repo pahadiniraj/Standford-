@@ -41,7 +41,7 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
           </button>
 
           {/* Logo Section */}
-          <div className="mx-4 mb-8 pb-4 py-4  border-b border-slate-400 ">
+          <div className="mx-4 mb-8 pb-4 py-6  border-b border-slate-400 ">
             <BrandLogo color="white" />
           </div>
 

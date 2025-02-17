@@ -1,12 +1,18 @@
+import { useRouter } from "next/navigation";
+
 interface logo {
   color?: string;
 }
 const BrandLogo = ({ color }: logo) => {
+  const router = useRouter();
+
   return (
-    <h1 className="md:text-3xl text-2xl font-bold text-black flex flex-col">
-      <span className={`text-${color}`}> Stanford </span>
-      <span className="text-amber-500">International</span>
-    </h1>
+    <button onClick={() => router.push("/")}>
+      <h1 className="md:text-3xl text-2xl justify-start items-start font-bold  flex flex-col">
+        <span className={`text-${color}`}> Stanford </span>
+        <span className="text-amber-500">International</span>
+      </h1>
+    </button>
   );
 };
 

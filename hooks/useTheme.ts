@@ -3,24 +3,29 @@
 import { useEffect, useState } from "react";
 
 export function useTheme() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark" | null>(null); // Null to prevent flicker
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme") as
-      | "light"
-      | "dark"
-      | null;
-    const preferredTheme = storedTheme || "light";
+    if (typeof window !== "undefined") {
+      // Ensure it's running on the client
+      const storedTheme = localStorage.getItem("theme") as
+        | "light"
+        | "dark"
+        | null;
+      const preferredTheme = storedTheme || "light";
 
-    setTheme(preferredTheme);
-    document.documentElement.setAttribute("data-theme", preferredTheme);
+      setTheme(preferredTheme);
+      document.documentElement.setAttribute("data-theme", preferredTheme);
+    }
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-    document.documentElement.setAttribute("data-theme", newTheme);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("theme", newTheme);
+      document.documentElement.setAttribute("data-theme", newTheme);
+    }
   };
 
   return { theme, toggleTheme };
