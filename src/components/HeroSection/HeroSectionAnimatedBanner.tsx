@@ -17,7 +17,12 @@ const HeroSectionAnimatedBanner = () => {
   }, []);
 
   return (
-    <motion.div className="absolute h-[140px] w-[260px] bg-yellow-400 right-20 top-[220px] rounded-lg p-2 overflow-hidden text-black z-10">
+    <motion.div
+      initial={{ opacity: 0 }} // Initial state is fully transparent
+      animate={{ opacity: 1 }} // Animate to fully opaque
+      transition={{ duration: 1, ease: "easeOut" }}
+      className="absolute h-[140px] w-[260px] bg-yellow-400 right-20 top-[220px] rounded-lg p-2 overflow-hidden text-black z-10"
+    >
       <motion.ul
         key={key} // Change the key to trigger re-animation
         initial="hidden"
@@ -40,7 +45,7 @@ const HeroSectionAnimatedBanner = () => {
               visible: { x: 0, opacity: 1 }, // Move to the right and become visible
             }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-lg flex items-start justify-start gap-2"
+            className="text-base flex items-start justify-start gap-2 font-semibold"
           >
             <FaCheck className="mt-2" />
             {value.content}

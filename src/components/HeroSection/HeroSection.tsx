@@ -1,6 +1,6 @@
 import React from "react";
 import CareerOpportunitiesSection from "./CareerOppurtunitiesSection";
-import HeroPhotoSection from "./HeroPhotoSection";
+import HeroPhotoSection from "./HeroPhotoAnimation";
 
 const HeroSection = () => {
   return (

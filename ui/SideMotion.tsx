@@ -20,6 +20,7 @@ const SideMotion = () => {
           stiffness: 100,
           damping: 10,
           mass: 1,
+          delay: 1,
         }}
       ></motion.div>
     </>
