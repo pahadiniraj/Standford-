@@ -1,9 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import img1 from "../../../public/assets/hero-section/Hero-img-1.jpg";
+import img1 from "../../../public/assets/hero-section/hero-img-1.jpg";
 import img2 from "../../../public/assets/hero-section/hero-img-2.jpg";
 import HeroSectionAnimatedBanner from "./HeroSectionAnimatedBanner";
+
+// You can add your base64 encoded low-res image here for blur effect
+const blurDataURL = "data:image/png;base64,..."; // Replace with actual base64 string of the low-res image
 
 const HeroPhotoSection = () => {
   return (
@@ -15,6 +18,8 @@ const HeroPhotoSection = () => {
           src={img1}
           alt="Hero Image 1"
           priority
+          placeholder="blur"
+          blurDataURL={blurDataURL} // Add the low-res image here
           className="object-cover object-center h-full w-full"
         />
       </div>
@@ -25,6 +30,8 @@ const HeroPhotoSection = () => {
           src={img2}
           alt="Hero Image 2"
           priority
+          placeholder="blur"
+          blurDataURL={blurDataURL} // Add the low-res image here
           className="object-cover object-center h-full w-full"
         />
       </div>

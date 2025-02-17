@@ -15,7 +15,7 @@ const CallAlert = () => {
         repeat: Infinity, // Loop the animation
         repeatType: "loop", // Loop type
         ease: "easeInOut", // Smooth easing
-        repeatDelay: 3, // Delay between shakes
+        repeatDelay: 1, // Delay between shakes
       }}
       whileHover={{ scale: 1 }} // Slightly scale up on hover
     >
