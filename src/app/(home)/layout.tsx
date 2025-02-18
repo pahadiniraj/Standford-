@@ -1,3 +1,4 @@
+import PolygonShape from "@/components/HeroSection/PolygonShape";
 import Navbar from "@/components/Navbar/Navbar";
 import PreNavbar from "@/components/Navbar/PreNavbar";
 
@@ -9,8 +10,11 @@ export default function HomeLayout({
   return (
     <div className="relative overflow-hidden">
       <PreNavbar />
-      <Navbar />
-      {children}
+      <div className="relative">
+        <PolygonShape />
+        <Navbar />
+        {children}
+      </div>
     </div>
   );
 }

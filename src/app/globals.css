@@ -5,11 +5,13 @@
 :root {
   --bg-color: white;
   --text-color: black;
+  --polygon-bg: rgba(226, 232, 240, 0.4);
 }
 
 [data-theme="dark"] {
   --bg-color: black;
   --text-color: white;
+  --polygon-bg: rgba(33, 29, 2, 0.43); /* darker shade for dark mode */
 }
 
 body {
@@ -29,5 +31,3 @@ h5,
 h6 {
   color: var(--text-color);
 }
-
-

@@ -6,7 +6,7 @@ import AlertMotion from "../../../ui/AlertMotion";
 
 const PreNavbar = () => {
   return (
-    <div className=" bg-black p-4 text-sm hidden md:block ">
+    <div className=" bg-black  p-4 text-sm hidden md:block shadow-[0px_4px_8px_rgba(255,223,0,0.1)]">
       <div className="lg:mx-auto  lg:container w-full flex justify-between items-start lg:px-16 relative ">
         <div className="flex md:gap-10  justify-start items-start gap-2 ">
           {/* Email */}

@@ -4,7 +4,7 @@ import HeroPhotoSection from "./HeroPhotoAnimation";
 
 const HeroSection = () => {
   return (
-    <div className="container mx-auto lg:px-20 px-4 pb-8 pt-6 mb-4 hidden md:flex justify-between gap-4">
+    <div className="lg:container lg:mx-auto lg:px-20 px-4   my-10  md:flex justify-between gap-4">
       <CareerOpportunitiesSection />
       <HeroPhotoSection />
     </div>

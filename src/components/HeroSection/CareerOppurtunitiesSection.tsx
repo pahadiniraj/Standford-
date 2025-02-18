@@ -6,7 +6,7 @@ import ButtonComponent from "../Button/Button";
 
 const CareerOpportunitiesSection = () => {
   return (
-    <div className="w-1/2 flex flex-col gap-2">
+    <div className="md:w-1/2 flex flex-col gap-2 bg-transparent relative p-4 text-center md:text-start py-14  ">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -25,7 +25,7 @@ const CareerOpportunitiesSection = () => {
             visible: { x: 0, opacity: 1 }, // Move to the right and become visible
           }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="text-2xl font-semibold"
+          className="md:text-base font-semibold"
         >
           FIND YOUR CAREER OPPORTUNITIES WITH
         </motion.h2>
@@ -35,7 +35,7 @@ const CareerOpportunitiesSection = () => {
             visible: { x: 0, opacity: 1 },
           }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="text-6xl font-extrabold"
+          className="xl:text-6xl md:text-4xl text-3xl font-extrabold"
         >
           STANFORAD
           <br />
@@ -47,7 +47,7 @@ const CareerOpportunitiesSection = () => {
             visible: { x: 0, opacity: 1 },
           }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="text-lg"
+          className="md:text-base lg:text-lg "
         >
           Stop waiting and start living your Australian Dream today with
           Stanford International.
@@ -60,7 +60,7 @@ const CareerOpportunitiesSection = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mt-6"
         >
-          <ButtonComponent className="rounded-lg py-2 px-4 w-1/4">
+          <ButtonComponent className="rounded-lg py-2 px-4 md:w-2/5 lg:w-2/5 xl:w-1/4 text-black">
             Read More
           </ButtonComponent>
         </motion.div>

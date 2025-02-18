@@ -8,7 +8,7 @@ const BrandLogo = ({ color }: logo) => {
 
   return (
     <button onClick={() => router.push("/")}>
-      <h1 className="md:text-3xl text-2xl justify-start items-start font-bold  flex flex-col">
+      <h1 className="text-2xl lg:text-3xl  justify-start items-start font-bold  flex flex-col">
         <span className={`text-${color}`}> Stanford </span>
         <span className="text-amber-500">International</span>
       </h1>

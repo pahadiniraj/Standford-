@@ -8,7 +8,7 @@ import HeroSectionAnimatedBanner from "./HeroSectionAnimatedBanner";
 
 const HeroPhotoSection = () => {
   return (
-    <div className="w-1/2 flex gap-4 relative">
+    <div className="w-1/2  gap-4 relative hidden md:flex">
       <HeroSectionAnimatedBanner />
       {/* Image 1 */}
       <motion.div
