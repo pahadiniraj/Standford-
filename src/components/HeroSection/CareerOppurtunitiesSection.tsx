@@ -6,7 +6,7 @@ import ButtonComponent from "../Button/Button";
 
 const CareerOpportunitiesSection = () => {
   return (
-    <div className="md:w-1/2 flex flex-col gap-2 bg-transparent relative p-4 text-center md:text-start py-14  ">
+    <div className="md:w-1/2 md:flex flex-col gap-2 bg-transparent relative p-4  md:text-start py-14 z-20  ">
       <motion.div
         initial="hidden"
         animate="visible"
@@ -47,7 +47,7 @@ const CareerOpportunitiesSection = () => {
             visible: { x: 0, opacity: 1 },
           }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="md:text-base lg:text-lg "
+          className="md:text-base lg:text-lg w-4/5 md:w-full text-sm mt-2"
         >
           Stop waiting and start living your Australian Dream today with
           Stanford International.

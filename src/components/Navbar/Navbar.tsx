@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="lg:mx-auto lg:container w-full flex justify-between items-center lg:px-20 px-4 pb-12 pt-6 mb-4 relative">
+      <div className="lg:mx-auto lg:container w-full flex justify-between items-center lg:px-20 px-4 md:pb-12 pb-5 pt-6 mb-4 relative">
         <div className="absolute md:-right-[130px] lg:-right-8 lg:-top-36 -z-10 -right-[170px] -top-36 ">
           <SideMotion />
         </div>

@@ -39,6 +39,7 @@ const HeroPhotoSection = () => {
           className="object-cover object-center h-full w-full"
         />
       </motion.div>
+      
     </div>
   );
 };
